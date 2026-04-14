@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All-Rounder-Net</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>All-Rounder-Net</h1>
+      <p>Train once, play many games (Nim, Dots &amp; Boxes, Tic Tac Toe, Gardner Chess).</p>
+
+      <section class="panel">
+        <h2>Start game</h2>
+        <label>Game <select id="game"></select></label>
+        <label>Params (JSON) <textarea id="params">{}</textarea></label>
+        <label>Play as
+          <select id="human_player">
+            <option value="1">Player 1</option>
+            <option value="-1">Player 2</option>
+          </select>
+        </label>
+        <button id="start">Start</button>
+      </section>
+
+      <section class="panel">
+        <h2>Board</h2>
+        <pre id="board">No game yet.</pre>
+        <p id="status"></p>
+      </section>
+
+      <section class="panel">
+        <h2>Legal actions</h2>
+        <div id="actions"></div>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
