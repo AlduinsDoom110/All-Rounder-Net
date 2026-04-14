@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "all-rounder-net"
+version = "0.1.0"
+description = "Multi-game neural network with web UI over HTTPS"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "fastapi>=0.110",
+  "uvicorn[standard]>=0.27",
+  "numpy>=1.26",
+  "torch>=2.2",
+  "pydantic>=2.6"
+]
+
+[tool.setuptools]
+packages = ["all_rounder_net", "all_rounder_net.games", "web"]
